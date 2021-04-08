@@ -1,0 +1,269 @@
+:root {
+    --grey: #777777;
+    --orange: #F16822;
+    --black: #333333;
+    --light-gray: #EEEEEE;
+}
+
+.container {
+    max-width: 132rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #FFFFFF;
+}
+
+.navbar-content {
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: end;
+}
+
+.nav-list > li {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.logo {
+    display: flex;
+    vertical-align: middle;
+}
+
+.logo-text {
+    padding-left: 1em;
+}
+
+/* Hero */ 
+
+.hero {
+    min-height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/hero-bg.jpg);
+}
+
+h1 {
+    color: var(--orange);
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-container {
+    max-width: 80rem;
+}
+
+.hero-text {
+    font-size: 2.5rem;
+}
+
+/* Services */
+
+.services {
+    min-height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services-description {
+    margin-bottom: 10rem;
+}
+
+.services-text {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80rem;
+}
+
+.services-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.services-icon {
+    display: flex;
+    max-width: 10rem;
+    min-height: 10rem;
+    border: solid transparent;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+}
+
+.services-img {
+    width: 50%;
+}
+
+.services-subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Description Ubi*/
+
+.description {
+    background-image: url(../img/description-section-bg.jpg);
+}
+
+.description-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.description-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40vh;
+    max-width: 80vh;
+    text-align: center;
+}
+
+.description-title {
+    color: var(--orange);
+
+}
+
+.description-text {
+    color: var(--light-gray);
+}
+
+.description-img {
+    max-width: 80rem;
+}
+
+/* Posts */
+
+.posts-container {
+    height: auto;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.posts-title-block {
+    width: 80rem;
+    margin-bottom: 14rem;
+}
+
+.posts-description {
+    margin-top: 5.5rem;
+}
+
+.articles-block {
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}
+
+.posts-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.blog-img {
+    margin: 2.5rem;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.blog-title {
+    font-size: 4rem;
+    margin-top: 7.3rem;
+    color: var(--orange);
+}
+
+.blog-text {
+    margin: 2.7rem 4.5rem 4.5rem 4.5rem;
+}
+
+/* Fun facts */
+
+.fun-facts::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4; 
+    z-index: -1;
+    background-size: 100%;
+    background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg");
+    opacity: 0.4;
+}
+
+.fun-facts {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.facts-row {
+    display: flex;
+    text-align: center;
+    max-width: 132rem;
+}
+
+.facts-column:not(:last-child) {
+    margin-right: 11rem;
+}
+
+.fact-number {
+    font-size: 6.4rem;
+}
+
+.fact-name {
+    font-size: 2.4rem;
+    transform: scale();
+}
