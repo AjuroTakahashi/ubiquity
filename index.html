@@ -21,7 +21,12 @@
                     <p class="logo-small">Professional Web UI</p>
                 </a>
             </figure>
-            <ul class="nav-list">
+            <button class="toggle-menu" aria-expanded="false" aria-controls="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="menu-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+            <ul id="menu" class="nav-list" hidden>
                 <li><a class="nav-link" href="#">Home</a></li>
                 <li><a class="nav-link" href="#">About</a></li>
                 <li><a class="nav-link" href="#">Portfolio</a></li>
@@ -33,14 +38,18 @@
     <section class="hero">
         <div class="container hero-container">
             <h1>At Ubiquity, We care</h1>
-            <p class="hero-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit, nesciunt dicta repellat nisi adipisci nemo</p>
+            <div class="carrousel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" class="left-arrow"><defs><style>.a{fill:#f16822;}</style></defs><path class="a" d="M36.275,25.225a2.585,2.585,0,0,1,0,3.55l-7.5,7.5a2.51,2.51,0,0,1-3.55-3.55l3.25-3.225H19.5a2.5,2.5,0,0,1,0-5h8.975l-3.25-3.225a2.51,2.51,0,1,1,3.55-3.55ZM52,27A25,25,0,1,1,27,2,25,25,0,0,1,52,27ZM7,27A20,20,0,1,0,27,7,20,20,0,0,0,7,27Z" transform="translate(-2 -2)"/></svg>
+                <p class="hero-text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit, nesciunt dicta repellat nisi adipisci nemo</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><defs><style>.a{fill:#f16822;}</style></defs><path class="a" d="M36.275,25.225a2.585,2.585,0,0,1,0,3.55l-7.5,7.5a2.51,2.51,0,0,1-3.55-3.55l3.25-3.225H19.5a2.5,2.5,0,0,1,0-5h8.975l-3.25-3.225a2.51,2.51,0,1,1,3.55-3.55ZM52,27A25,25,0,1,1,27,2,25,25,0,0,1,52,27ZM7,27A20,20,0,1,0,27,7,20,20,0,0,0,7,27Z" transform="translate(-2 -2)"/></svg>  
+            </div>          
         </div>
     </section>
     <section class="services">
         <div class="container">
             <div class="services-description">
                 <h2>Our Services</h2>
-                <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt molestias corrupti repellat, doloremque qui eius. Blanditiis quibusdam quia voluptate nihil consequuntur consequatur sit dignissimos ipsum ea, ut, optio maiores.</p>
+                <p class="services-text baseline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt molestias corrupti repellat, doloremque qui eius. Blanditiis quibusdam quia voluptate nihil consequuntur consequatur sit dignissimos ipsum ea, ut, optio maiores.</p>
             </div>
             <div class="services-block">
                 <article>
@@ -78,7 +87,7 @@
         <div class="container description-container">
             <div class="description-text-container">
                 <h2 class="description-title">What is Ubiquity</h2>
-                <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque inventore iusto numquam. Eum, soluta! Animi officiis obcaecati laboriosam, maxime</p>
+                <p class="description-text baseline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque inventore iusto numquam. Eum, soluta! Animi officiis obcaecati laboriosam, maxime</p>
             </div>
             <img src="./img/browser-mockup.png" srcset="./img/browser-mockup@x2.png x2" alt="" class="description-img">
         </div>
@@ -87,7 +96,7 @@
         <div class="container posts-container">
             <div class="posts-title-block">
                 <h2>Latest Posts</h2>
-                <p class="posts-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ad cumque saepe ex fuga ipsam</p>
+                <p class="posts-description baseline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ad cumque saepe ex fuga ipsam</p>
             </div>
             <div class="articles-block">
                 <article class="posts-card">
@@ -100,28 +109,48 @@
                     <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus asperiores quo et, officiis voluptate aliquid alias, aut</p>
                 </article>
                 <article class="posts-card">
-                    <img src="./img/william-iven-unsplash.jpg" alt="" srcset="./img/william-iven-unsplash@x2.jpg x2" class="blog-img">
-                    <h3 class="blog-title">Blog Title</h3>
+                    <a href="">
+                        <img src="./img/william-iven-unsplash.jpg" alt="" srcset="./img/william-iven-unsplash@x2.jpg x2" class="blog-img">
+                    </a>
+                    <a href="">
+                        <h3 class="blog-title">Blog Title</h3>
+                    </a>
                     <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus asperiores quo et, officiis voluptate aliquid alias, aut</p>
                 </article>
                 <article class="posts-card">
-                    <img src="./img/green-chameleon-s9CC2SKySJM-unsplash.jpg" alt="" srcset="./img/green-chameleon-s9CC2SKySJM-unsplash@x2.jpg x2" class="blog-img">
-                    <h3 class="blog-title">Blog Title</h3>
+                    <a href="">
+                        <img src="./img/green-chameleon-s9CC2SKySJM-unsplash.jpg" alt="" srcset="./img/green-chameleon-s9CC2SKySJM-unsplash@x2.jpg x2" class="blog-img">
+                    </a>
+                    <a href="">
+                        <h3 class="blog-title">Blog Title</h3>
+                    </a>
                     <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus asperiores quo et, officiis voluptate aliquid alias, aut</p>
                 </article>
                 <article class="posts-card">
-                    <img src="./img/helloquence-5fNmWej4tAA-unsplash.jpg" alt="" srcset="./img/helloquence-5fNmWej4tAA-unsplash@x2.jpg xZ" class="blog-img">
-                    <h3 class="blog-title">Blog Title</h3>
+                    <a href="">
+                        <img src="./img/helloquence-5fNmWej4tAA-unsplash.jpg" alt="" srcset="./img/helloquence-5fNmWej4tAA-unsplash@x2.jpg xZ" class="blog-img">
+                    </a>
+                    <a href="">
+                        <h3 class="blog-title">Blog Title</h3>
+                    </a>
                     <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus asperiores quo et, officiis voluptate aliquid alias, aut</p>
                 </article>
                 <article class="posts-card">
-                    <img src="./img/lauren-mancke-aOC7TSLb1o8-unsplash-1.jpg" alt="" srcset="./img/lauren-mancke-aOC7TSLb1o8-unsplash-1@x2.jpg x2" class="blog-img">
-                    <h3 class="blog-title">Blog Title</h3>
+                    <a href="">
+                        <img src="./img/lauren-mancke-aOC7TSLb1o8-unsplash-1.jpg" alt="" srcset="./img/lauren-mancke-aOC7TSLb1o8-unsplash-1@x2.jpg x2" class="blog-img">
+                    </a>
+                    <a href="">
+                        <h3 class="blog-title">Blog Title</h3>
+                    </a>
                     <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus asperiores quo et, officiis voluptate aliquid alias, aut</p>
                 </article>
                 <article class="posts-card">
-                    <img src="./img/annie-spratt.jpg" alt="" srcset="./img/annie-spratt@x2.jpg x2" class="blog-img">
-                    <h3 class="blog-title">Blog Title</h3>
+                    <a href="">
+                        <img src="./img/annie-spratt.jpg" alt="" srcset="./img/annie-spratt@x2.jpg x2" class="blog-img">
+                    </a>
+                    <a href="">
+                        <h3 class="blog-title">Blog Title</h3>
+                    </a>
                     <p class="blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus asperiores quo et, officiis voluptate aliquid alias, aut</p>
                 </article>
             </div>
@@ -162,9 +191,9 @@
         <div class="container">
             <article class="employee-card">
                 <img src="./img/amanda-sigfried.jpg" alt="" srcset="./img/amanda-sigfried.jpg" class="employee-photo">
-                <div class="employee-description">
+                <div>
                     <h2 class="employee-name">Amanda Sigfried</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In odio repellat a cupiditate, soluta ratione suscipit natus! Cumque dolorum, rerum expedita minima enim molestiae illum reiciendis! Corporis perferendis soluta tempora?</p>
+                    <p class="baseline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In odio repellat a cupiditate, soluta ratione suscipit natus! Cumque dolorum, rerum expedita minima enim molestiae illum reiciendis! Corporis perferendis soluta tempora?</p>
                 </div>
             </article>
         </div>
@@ -261,5 +290,6 @@
             </div>
         </div>
     </footer>
+    <script src="./animation.js"></script>
 </body>
 </html>
